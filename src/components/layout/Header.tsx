@@ -26,7 +26,13 @@ export default function Header() {
               href="/cbam-kontrol"
               className="text-sm font-medium text-[#1E293B] hover:text-[#0F4C75] transition-colors"
             >
-              CBAM Kapsam Kontrol
+              Kapsam Kontrol
+            </Link>
+            <Link
+              href="/hesaplama"
+              className="text-sm font-medium text-[#1E293B] hover:text-[#0F4C75] transition-colors"
+            >
+              Emisyon Hesapla
             </Link>
             <Link
               href="/#fiyatlandirma"
@@ -34,21 +40,15 @@ export default function Header() {
             >
               Fiyatlandırma
             </Link>
-            <Link
-              href="/#iletisim"
-              className="text-sm font-medium text-[#1E293B] hover:text-[#0F4C75] transition-colors"
-            >
-              İletişim
-            </Link>
           </nav>
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
             <Link
-              href="/cbam-kontrol"
+              href="/hesaplama"
               className="bg-[#0F4C75] hover:bg-[#0a3555] text-white text-sm font-semibold px-4 py-2 rounded-lg transition-colors"
             >
-              Ücretsiz Kontrol Et
+              Hesaplamaya Başla
             </Link>
           </div>
 
@@ -78,7 +78,14 @@ export default function Header() {
               className="block text-sm font-medium text-[#1E293B] hover:text-[#0F4C75] py-2"
               onClick={() => setMenuOpen(false)}
             >
-              CBAM Kapsam Kontrol
+              Kapsam Kontrol
+            </Link>
+            <Link
+              href="/hesaplama"
+              className="block text-sm font-medium text-[#1E293B] hover:text-[#0F4C75] py-2"
+              onClick={() => setMenuOpen(false)}
+            >
+              Emisyon Hesapla
             </Link>
             <Link
               href="/#fiyatlandirma"
@@ -88,18 +95,11 @@ export default function Header() {
               Fiyatlandırma
             </Link>
             <Link
-              href="/#iletisim"
-              className="block text-sm font-medium text-[#1E293B] hover:text-[#0F4C75] py-2"
-              onClick={() => setMenuOpen(false)}
-            >
-              İletişim
-            </Link>
-            <Link
-              href="/cbam-kontrol"
+              href="/hesaplama"
               className="block bg-[#0F4C75] text-white text-sm font-semibold px-4 py-2 rounded-lg text-center"
               onClick={() => setMenuOpen(false)}
             >
-              Ücretsiz Kontrol Et
+              Hesaplamaya Başla
             </Link>
           </div>
         )}
